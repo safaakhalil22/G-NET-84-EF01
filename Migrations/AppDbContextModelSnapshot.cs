@@ -11,101 +11,101 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace G_NET_84_EF01.Migrations
 {
     #region ModelSnapshot
-    [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
-    {
+//    [DbContext(typeof(AppDbContext))]
+//    partial class AppDbContextModelSnapshot : ModelSnapshot
+//    {
        
-        protected override void BuildModel(ModelBuilder modelBuilder)
-        {
-#pragma warning disable 612, 618
-            modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.32")
-                .HasAnnotation("Relational:MaxIdentifierLength", 128);
+//        protected override void BuildModel(ModelBuilder modelBuilder)
+//        {
+//#pragma warning disable 612, 618
+//            modelBuilder
+//                .HasAnnotation("ProductVersion", "8.0.32")
+//                .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
-            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
+//            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("G_NET_84_EF01.Models.Author", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+//            modelBuilder.Entity("G_NET_84_EF01.Models.Author", b =>
+//                {
+//                    b.Property<int>("Id")
+//                        .ValueGeneratedOnAdd()
+//                        .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+//                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Biography")
-                        .HasColumnType("nvarchar(max)");
+//                    b.Property<string>("Biography")
+//                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("DateOfBirth")
-                        .HasColumnType("datetime2");
+//                    b.Property<DateTime>("DateOfBirth")
+//                        .HasColumnType("datetime2");
 
-                    b.Property<string>("Email")
-                        .HasColumnType("nvarchar(max)");
+//                    b.Property<string>("Email")
+//                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("FirstName")
-                        .HasColumnType("nvarchar(max)");
+//                    b.Property<string>("FirstName")
+//                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("LastName")
-                        .HasColumnType("nvarchar(max)");
+//                    b.Property<string>("LastName")
+//                        .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id");
+//                    b.HasKey("Id");
 
-                    b.ToTable("Authors");
-                });
+//                    b.ToTable("Authors");
+//                });
 
-            modelBuilder.Entity("G_NET_84_EF01.Models.Book", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+//            modelBuilder.Entity("G_NET_84_EF01.Models.Book", b =>
+//                {
+//                    b.Property<int>("Id")
+//                        .ValueGeneratedOnAdd()
+//                        .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+//                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("ISBN")
-                        .HasColumnType("nvarchar(max)");
+//                    b.Property<string>("ISBN")
+//                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("InStock")
-                        .HasColumnType("bit");
+//                    b.Property<bool>("InStock")
+//                        .HasColumnType("bit");
 
-                    b.Property<int>("NumberOfPages")
-                        .HasColumnType("int");
+//                    b.Property<int>("NumberOfPages")
+//                        .HasColumnType("int");
 
-                    b.Property<decimal>("Price")
-                        .HasColumnType("decimal(18,2)");
+//                    b.Property<decimal>("Price")
+//                        .HasColumnType("decimal(18,2)");
 
-                    b.Property<int>("PublishedYear")
-                        .HasColumnType("int");
+//                    b.Property<int>("PublishedYear")
+//                        .HasColumnType("int");
 
-                    b.Property<string>("Title")
-                        .HasColumnType("nvarchar(max)");
+//                    b.Property<string>("Title")
+//                        .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id");
+//                    b.HasKey("Id");
 
-                    b.ToTable("Books");
-                });
+//                    b.ToTable("Books");
+//                });
 
-            modelBuilder.Entity("G_NET_84_EF01.Models.Category", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+//            modelBuilder.Entity("G_NET_84_EF01.Models.Category", b =>
+//                {
+//                    b.Property<int>("Id")
+//                        .ValueGeneratedOnAdd()
+//                        .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+//                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Description")
-                        .HasColumnType("nvarchar(max)");
+//                    b.Property<string>("Description")
+//                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("IsActive")
-                        .HasColumnType("bit");
+//                    b.Property<bool>("IsActive")
+//                        .HasColumnType("bit");
 
-                    b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
+//                    b.Property<string>("Name")
+//                        .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id");
+//                    b.HasKey("Id");
 
-                    b.ToTable("Categories");
-                });
-             #pragma warning restore 612, 618
-        }
-    }
+//                    b.ToTable("Categories");
+//                });
+//             #pragma warning restore 612, 618
+//        }
+//    }
     #endregion
 }
