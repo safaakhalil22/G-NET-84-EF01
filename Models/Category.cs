@@ -9,10 +9,10 @@ namespace G_NET_84_EF01.Models
     internal class Category
     {
         #region Category
-        public int Id { get; set; }
-        public string? Name { get; set; }
-        public string? Description { get; set; }
-        public bool IsActive { get; set; }
+        //public int Id { get; set; }
+        //public string? Name { get; set; }
+        //public string? Description { get; set; }
+        //public bool IsActive { get; set; }
         #endregion
     }
 }
